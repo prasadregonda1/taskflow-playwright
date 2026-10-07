@@ -1,0 +1,28 @@
+{
+  "name": "taskflow-playwright",
+  "version": "1.0.0",
+  "description": "TaskFlow website UI and REST API automation portfolio",
+  "scripts": {
+    "start": "node app/server.mjs",
+    "test": "playwright test --project=api --project=chromium",
+    "test:api": "playwright test --project=api",
+    "test:chromium": "playwright test --project=chromium",
+    "test:all": "playwright test",
+    "test:smoke": "playwright test --project=chromium --grep @smoke",
+    "test:chrome": "playwright test --project=chrome",
+    "test:edge": "playwright test --project=edge",
+    "test:headed": "playwright test --project=chrome --headed",
+    "test:ui": "playwright test --ui",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "Durgaprasad Regonda",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  },
+  "private": true
+}

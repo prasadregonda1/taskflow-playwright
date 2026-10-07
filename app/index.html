@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>TaskFlow</title><link rel="stylesheet" href="/styles.css"></head>
+<body><main><header><span class="eyebrow">PERSONAL WORKSPACE</span><h1>TaskFlow</h1><p>A little structure for your next big idea.</p></header>
+<section aria-label="Create a task" class="panel"><form id="create-form"><label for="task-title">Task title</label><input id="task-title" placeholder="What needs to get done?" maxlength="100" autocomplete="off"><div class="actions"><div><label for="priority">Priority</label><select id="priority"><option>Low</option><option selected>Medium</option><option>High</option></select></div><button type="submit">Add task</button></div></form></section>
+<p id="error" role="alert" hidden></p>
+<section aria-label="Your tasks" class="panel"><div class="toolbar"><div role="group" aria-label="Task filters"><button aria-pressed="true" data-filter="All">All</button><button aria-pressed="false" data-filter="Active">Active</button><button aria-pressed="false" data-filter="Completed">Completed</button></div><p id="count" role="status"></p></div><p id="empty">No tasks yet. Add your first task above.</p><ul id="tasks" aria-label="Task list"></ul><button id="clear-completed">Clear completed</button></section>
+<footer>TaskFlow · Demo website for automation practice</footer></main><script type="module" src="/app.js"></script></body></html>
